@@ -1,0 +1,63 @@
+Setup Word-press in local system:
+
+Prerequisite:
+1) XAMPP : Module Embedded [Apache(PhP), My-sql(MariyaDB), FileZila, Mercury, Tomcat] 	
+	Link to Download: https://www.apachefriends.org/index.html 
+2) Word-press bundle
+	Link to Download: https://wordpress.org/download/
+
+Q: What is XAMPP?
+A: XAMPP is the most popular PHP development environment
+XAMPP is a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.
+
+Note: You can also use My-sql separately, if you don't want XAMPP's My-sql.
+
+Step for setup:
+Step 1: Download and install XAMPP. Link to Download: https://www.apachefriends.org/index.html
+Step 2: Download Word-press(Zip file will download). Link to Download: https://wordpress.org/download/
+Step 3: Extract the Word-press in htdocs folder. You will a folder with name "wordpress". 
+Step 4: Rename the extracted folder with 	name: MyFirstWebsite.
+
+Q: Why we need to extract Word-press(Zip file) in htdocs.
+A: htdocs stands for “HyperTextDocumentS”. if you have a folder or directory in your computer server which is called htdocs. this is the directory where you put your public files call root directory. So lets say i have a htdocs directory in my computer, so i put a file called webune.html in the htdocs folder, i can access that file by going to my website. 
+	example: http://www.example.com/webune.html 
+
+Q: can we change root folder?
+A: Yes! but we have to do certain configuration in server's file.
+
+Step 5: Now Open Xampp which you installed in Step 1. You can find it in start menu. 
+Step 6: Now Let's the local server. Click on start button available besides Apache.
+Step 7: Start DB server i.e. My-sql. Click on start button available besides Mysql.
+
+Good job! you just setup local server and started it in your system.
+Oh wait! what about word-press?
+Don't Worry, we will configure it also. 
+
+Step 8: Open browser and hit http://localhost/  Or http://localhost/dashboard/
+Step 9: server dashboard will come. Click on "phpMyAdmin" tab.
+Step 10: Here you have DataBase server access. 
+Step 11: Click on DataBases tab and Create Db with name: MyFirstWebsiteDB.
+Step 12: Open browser and hit http://localhost/MyFirstWebsite
+
+Note: "MyFirstWebsite" is the directory you renamed in Step 4.
+
+Step 13: It will ask you for language. Select which suited to you best. Click Continue and than lets go.
+
+Note: Word-press will ask you for DataBase access for installation. You can create new user from phpMyAdmin(which open in Step  for database access or you can also use default user. I am using default user in this document.
+
+Step 14: Fill the form and submit: 
+		Database Name : MyFirstWebsiteDB (Created in Step 11).
+		Username: root (DataBase Username)
+		Password: <DataBase Password><Leave it blank, if you are using default user> 
+		Database Host: localhost
+		Table Prefix: wp_ 
+     	
+Step 15:Click Run Installation. 
+ 
+Step 16: Fill the form and Click Install wordpress: 
+			Site Title: <whatever you want>
+			Username: <whatever you want>
+			Password: <Type Your own password or copy and save it the auto-generated password>
+			Your Email: <add email if you want>
+			Search Engine Visibility: <your choice>
+			
